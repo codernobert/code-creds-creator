@@ -20,7 +20,7 @@ const featuredProjects = [
       "Improved trust through traceable, source-backed responses",
     ],
     tech: ["Python", "FastAPI", "MongoDB", "Vector Search", "RAG", "Open-Source LLMs"],
-    external: "https://programming-learning-bot.example.com",
+    external: "https://programming-learning-bot.vercel.app/ask.html",
     image: "🤖",
   },
   {
@@ -58,7 +58,7 @@ const featuredProjects = [
       "Reduced operational overhead and manual interventions",
     ],
     tech: ["Java", "Spring Boot", "Kafka", "PostgreSQL", "Quartz"],
-    external: "https://epaper.safaricom.co.ke",
+    external: "https://myaccount.safaricom.co.ke/discover/e-newspaper/publications",
     image: "📰",
   },
 ];
@@ -68,13 +68,13 @@ const otherProjects = [
     title: "E-Newspaper Billing Migration (SDP → Huawei CSB)",
     description: "Led backend migration to Huawei CSB, redesigning SOAP/XML billing flows. Achieved 300% revenue growth (KES 20K → 60K/day).",
     tech: ["Java", "Spring Boot", "SOAP", "XML/XSD/WSDL", "PostgreSQL"],
-    external: "https://epaper.safaricom.co.ke",
+    external: "https://myaccount.safaricom.co.ke/discover/e-newspaper/publications",
   },
   {
     title: "Skiza OTP Consent & Anti-Fraud Engine",
     description: "OTP-based consent workflows with immutable audit trails for regulatory compliance and fraud prevention.",
     tech: ["Java", "Spring Boot", "Redis", "PostgreSQL"],
-    external: "https://skiza.safaricom.co.ke",
+    external: "https://skiza.mtech.ke/",
   },
   {
     title: "E-Paper PDF Optimizer Microservice",

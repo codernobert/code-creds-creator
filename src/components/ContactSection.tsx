@@ -42,7 +42,7 @@ const ContactSection = () => {
               <div className="flex items-center gap-3">
                 <Linkedin className="w-5 h-5 text-primary" />
                 <a 
-                  href="https://linkedin.com/in/norbert-okoth" 
+                  href="https://www.linkedin.com/in/norbert-okoth-321325207/"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -53,7 +53,7 @@ const ContactSection = () => {
               <div className="flex items-center gap-3">
                 <Github className="w-5 h-5 text-primary" />
                 <a 
-                  href="https://gitlab.com" 
+                  href="https://github.com/codernobert"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
