@@ -1,44 +1,53 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Database, Cloud, Wrench, Palette, Terminal } from "lucide-react";
+import { Code2, Database, Cloud, Wrench, MessageSquare, TestTube, Users, Eye } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Languages & Backend",
     icon: Code2,
-    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"],
-    color: "primary",
+    skills: ["Java", "Python", "Go", "JavaScript (ES6+)", "REST APIs", "Microservices", "Event-Driven Architecture", "System Design"],
   },
   {
-    title: "Backend",
-    icon: Terminal,
-    skills: ["Node.js", "Python", "Express", "GraphQL", "REST APIs"],
-    color: "primary",
+    title: "Frontend & UI",
+    icon: Wrench,
+    skills: ["React", "JavaScript (ES6+)", "HTML5", "CSS3", "UI Integration with Backend APIs"],
   },
   {
-    title: "Database",
+    title: "Databases & Caching",
     icon: Database,
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Supabase"],
-    color: "primary",
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Schema Design", "Indexing", "Sharding"],
+  },
+  {
+    title: "Messaging & Streaming",
+    icon: MessageSquare,
+    skills: ["Kafka", "Kafka Streams", "RabbitMQ"],
+  },
+  {
+    title: "AI & Data Platforms",
+    icon: Cloud,
+    skills: ["FastAPI", "Vector Search", "Open-Source LLMs", "RAG"],
   },
   {
     title: "Cloud & DevOps",
     icon: Cloud,
-    skills: ["AWS", "Docker", "CI/CD", "Vercel", "GitHub Actions"],
-    color: "primary",
+    skills: ["Docker", "Kubernetes", "AWS (EC2, S3, RDS, CloudWatch)", "CI/CD (Jenkins, GitHub Actions)", "Linux"],
   },
   {
-    title: "Tools",
-    icon: Wrench,
-    skills: ["Git", "VS Code", "Figma", "Postman", "Jest"],
-    color: "primary",
+    title: "Observability & Reliability",
+    icon: Eye,
+    skills: ["Prometheus", "Grafana", "Loki", "Tempo", "Distributed Tracing", "Profiling", "Incident Response"],
   },
   {
-    title: "Design",
-    icon: Palette,
-    skills: ["UI/UX", "Responsive", "Accessibility", "Animation", "Prototyping"],
-    color: "primary",
+    title: "Testing & Quality",
+    icon: TestTube,
+    skills: ["TDD", "BDD", "API Testing", "Performance Testing", "Automation", "JUnit", "Selenium", "JMeter"],
+  },
+  {
+    title: "Collaboration",
+    icon: Users,
+    skills: ["Agile / Scrum", "Code Reviews", "Cross-Functional Teamwork", "Mentoring"],
   },
 ];
 
@@ -57,7 +66,7 @@ const SkillsSection = () => {
         >
           <div className="flex items-center gap-4 mb-12 max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              <span className="font-mono text-primary text-xl">02.</span> Skills & Technologies
+              <span className="font-mono text-primary text-xl">02.</span> Core Technical Skills
             </h2>
             <div className="flex-1 h-px bg-border max-w-xs" />
           </div>

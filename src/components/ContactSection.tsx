@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin, Phone } from "lucide-react";
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -17,15 +17,55 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mx-auto text-center"
         >
-          <p className="font-mono text-primary text-sm mb-4">04. What's Next?</p>
+          <p className="font-mono text-primary text-sm mb-4">08. What's Next?</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Get In Touch</h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            I'm currently looking for new opportunities. Whether you have a question 
-            or just want to say hi, I'll do my best to get back to you!
+            I'm always open to discussing new opportunities, challenging projects, 
+            or collaborations. Feel free to reach out!
           </p>
+
+          {/* Contact Info */}
+          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 mb-8 text-left">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-primary" />
+                <a href="tel:+254758551314" className="text-muted-foreground hover:text-primary transition-colors">
+                  +254 758 551 314
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-primary" />
+                <a href="mailto:norbertokoth01@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  norbertokoth01@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Linkedin className="w-5 h-5 text-primary" />
+                <a 
+                  href="https://linkedin.com/in/norbert-okoth" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  LinkedIn Profile
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Github className="w-5 h-5 text-primary" />
+                <a 
+                  href="https://gitlab.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  GitLab Profile
+                </a>
+              </div>
+            </div>
+          </div>
           
           <motion.a
-            href="mailto:hello@example.com"
+            href="mailto:norbertokoth01@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 font-mono px-8 py-4 border border-primary text-primary rounded-lg hover:bg-primary/10 transition-all duration-300"
@@ -33,34 +73,6 @@ const ContactSection = () => {
             <Mail className="w-5 h-5" />
             Say Hello
           </motion.a>
-
-          {/* Social Links */}
-          <div className="flex justify-center gap-6 mt-12">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 transform duration-300"
-            >
-              <Github className="w-6 h-6" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 transform duration-300"
-            >
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 transform duration-300"
-            >
-              <Twitter className="w-6 h-6" />
-            </a>
-          </div>
         </motion.div>
       </div>
     </section>

@@ -6,6 +6,8 @@ const navItems = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
+  { label: "Architecture", href: "#architecture" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -37,11 +39,11 @@ const Navigation = () => {
             className="font-mono text-xl font-bold text-primary"
             whileHover={{ scale: 1.05 }}
           >
-            &lt;dev /&gt;
+            &lt;NO /&gt;
           </motion.a>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-6">
             {navItems.map((item, index) => (
               <motion.li
                 key={item.label}
@@ -61,10 +63,10 @@ const Navigation = () => {
             <motion.li
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.6 }}
             >
               <a
-                href="#contact"
+                href="#experience"
                 className="font-mono text-sm px-4 py-2 border border-primary text-primary rounded hover:bg-primary/10 transition-colors"
               >
                 Resume
@@ -103,7 +105,7 @@ const Navigation = () => {
               ))}
               <li>
                 <a
-                  href="#contact"
+                  href="#experience"
                   className="font-mono text-sm px-4 py-2 border border-primary text-primary rounded hover:bg-primary/10 transition-colors inline-block"
                 >
                   Resume

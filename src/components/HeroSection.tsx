@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -26,27 +26,25 @@ const HeroSection = () => {
             transition={{ delay: 0.3 }}
             className="text-5xl md:text-7xl font-bold text-foreground mb-4"
           >
-            John Developer.
+            Norbert Odayo Okoth.
           </motion.h1>
           
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-4xl md:text-6xl font-bold text-muted-foreground mb-6"
+            className="text-3xl md:text-5xl font-bold text-muted-foreground mb-6"
           >
-            I build things for the web.
+            Senior Software Engineer
           </motion.h2>
           
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed"
+            className="text-lg text-muted-foreground max-w-2xl mb-8 leading-relaxed font-mono"
           >
-            I'm a software engineer specializing in building exceptional digital 
-            experiences. Currently focused on creating accessible, human-centered 
-            products with modern technologies.
+            Full‑Stack (Java/Python/Go/React/JS) | Scalable Microservices & AI Systems | Cloud‑Native | QA
           </motion.p>
           
           <motion.div
@@ -59,8 +57,14 @@ const HeroSection = () => {
               href="#projects"
               className="group font-mono px-8 py-4 border border-primary text-primary rounded-lg hover:bg-primary/10 transition-all duration-300 flex items-center gap-2"
             >
-              Check out my work
+              View My Work
               <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+            </a>
+            <a
+              href="#experience"
+              className="font-mono px-8 py-4 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-all duration-300"
+            >
+              Experience
             </a>
           </motion.div>
           
@@ -71,26 +75,36 @@ const HeroSection = () => {
             className="flex items-center gap-6"
           >
             <a
-              href="https://github.com"
+              href="https://gitlab.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="GitLab"
             >
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/norbert-okoth"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="LinkedIn"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:norbertokoth01@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Email"
             >
               <Mail className="w-6 h-6" />
+            </a>
+            <a
+              href="tel:+254758551314"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Phone"
+            >
+              <Phone className="w-6 h-6" />
             </a>
             <div className="w-24 h-px bg-muted-foreground/30" />
           </motion.div>
