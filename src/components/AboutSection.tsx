@@ -17,7 +17,7 @@ const AboutSection = () => {
         >
           <div className="flex items-center gap-4 mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              <span className="font-mono text-primary text-xl">01.</span> About Me
+              <span className="font-mono text-primary text-xl">01.</span> Professional Summary
             </h2>
             <div className="flex-1 h-px bg-border max-w-xs" />
           </div>
@@ -25,30 +25,38 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-3 gap-12">
             <div className="md:col-span-2 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Hello! I'm John, a software engineer based in San Francisco, CA. 
-                I enjoy creating things that live on the internet, whether that be 
-                websites, applications, or anything in between.
+                Full stack engineer with <span className="text-primary font-semibold">5+ years</span> designing 
+                high scale, fault tolerant REST APIs, distributed systems, and modern frontends 
+                serving <span className="text-primary font-semibold">millions of users</span>.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My interest in web development started back in 2015 when I decided 
-                to try editing custom Tumblr themes — turns out hacking together a 
-                custom reblog button taught me a lot about HTML & CSS!
+                Expert in <span className="text-primary">Java (Spring Boot/WebFlux)</span>, 
+                <span className="text-primary"> Python</span>, and 
+                <span className="text-primary"> React</span>, with deep experience in microservices, 
+                event driven architectures, cloud native deployments, AI powered platforms, 
+                and production observability.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Fast-forward to today, and I've had the privilege of working at 
-                <span className="text-primary"> startups</span>, 
-                <span className="text-primary"> tech companies</span>, and 
-                <span className="text-primary"> agencies</span>. My main focus 
-                these days is building accessible, inclusive products and digital 
-                experiences for a variety of clients.
+                Proven track record delivering resilient, high throughput platforms, 
+                mentoring engineers, and driving architectural decisions that improve 
+                performance, reliability, and revenue growth.
               </p>
 
               <div className="pt-4">
                 <p className="text-muted-foreground mb-4">
-                  Here are a few technologies I've been working with recently:
+                  Core technologies I work with:
                 </p>
                 <ul className="grid grid-cols-2 gap-2">
-                  {["TypeScript", "React", "Node.js", "Next.js", "PostgreSQL", "AWS"].map((tech) => (
+                  {[
+                    "Java (Spring Boot/WebFlux)",
+                    "Python (FastAPI)",
+                    "Go",
+                    "React / JavaScript",
+                    "PostgreSQL / MongoDB",
+                    "Kafka / Redis",
+                    "Docker / Kubernetes",
+                    "AWS / CI/CD"
+                  ].map((tech) => (
                     <li key={tech} className="font-mono text-sm text-muted-foreground flex items-center gap-2">
                       <span className="text-primary">▹</span> {tech}
                     </li>
@@ -63,7 +71,7 @@ const AboutSection = () => {
                 <div className="relative bg-card rounded-lg overflow-hidden border border-border">
                   <div className="aspect-square bg-gradient-to-br from-muted to-secondary flex items-center justify-center">
                     <div className="w-32 h-32 rounded-full bg-primary/20 flex items-center justify-center">
-                      <span className="font-mono text-4xl text-primary">JD</span>
+                      <span className="font-mono text-4xl text-primary">NO</span>
                     </div>
                   </div>
                 </div>
