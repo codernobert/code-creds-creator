@@ -25,14 +25,14 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-3 gap-12">
             <div className="md:col-span-2 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Full stack engineer with <span className="text-primary font-semibold">5+ years</span> designing 
+                Senior Backend engineer with <span className="text-primary font-semibold">5+ years</span> designing
                 high scale, fault tolerant REST APIs, distributed systems, and modern frontends 
                 serving <span className="text-primary font-semibold">millions of users</span>.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Expert in <span className="text-primary">Java (Spring Boot/WebFlux)</span>, 
                 <span className="text-primary"> Python</span>, and 
-                <span className="text-primary"> React</span>, with deep experience in microservices, 
+                <span className="text-primary"> React, NodeJS</span>, with deep experience in microservices,
                 event driven architectures, cloud native deployments, AI powered platforms, 
                 and production observability.
               </p>
@@ -51,6 +51,7 @@ const AboutSection = () => {
                     "Java (Spring Boot/WebFlux)",
                     "Python (FastAPI)",
                     "Go",
+                    "NodeJS",
                     "React / JavaScript",
                     "PostgreSQL / MongoDB",
                     "Kafka / Redis",

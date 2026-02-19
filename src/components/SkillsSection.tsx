@@ -7,7 +7,7 @@ const skillCategories = [
   {
     title: "Languages & Backend",
     icon: Code2,
-    skills: ["Java", "Python", "Go", "JavaScript (ES6+)", "REST APIs", "Microservices", "Event-Driven Architecture", "System Design"],
+    skills: ["Java", "Python", "Go", "JavaScript (ES6+)", "REST APIs", "NodeJs", "Microservices", "Event-Driven Architecture", "System Design"],
   },
   {
     title: "Frontend & UI",
