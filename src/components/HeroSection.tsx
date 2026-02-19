@@ -44,7 +44,7 @@ const HeroSection = () => {
             transition={{ delay: 0.5 }}
             className="text-lg text-muted-foreground max-w-2xl mb-8 leading-relaxed font-mono"
           >
-            Full‑Stack (Java/Python/Go/React/JS) | Scalable Microservices & AI Systems | Cloud‑Native | QA
+            Senior Backend Endineer (Java/Python/NodeJs/React/JS) | Scalable Microservices & AI Systems | Cloud‑Native | QA
           </motion.p>
           
           <motion.div
